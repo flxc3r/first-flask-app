@@ -10,6 +10,10 @@ def index():
     return render_template('home.jinja2', today=today)
 
 
+@app.route('/stores')
+def stores():
+    return render_template('stores.jinja2')
+
 
 if __name__ == "__main__":
     app.run()
